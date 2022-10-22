@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #88abff;
+}
+.wrapper {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 256px);
+    gap: 15px;
+}
+
+.wrapper li {
+    background-color: #fff;
+    list-style: none;
+    height: 250px;
+    border-radius: 5px;
+    padding: 15px 20px 20px;
+}
+
+.wrapper .note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add-box,
+.icon,
+.bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.add-box .icon {
+    height: 78px;
+    width: 78px;
+    border-radius: 50%;
+    border: 2px dashed powderblue;
+    font-size: 40px;
+    color: #88abff;
+    cursor: pointer;
+}
+
+.add-box p {
+    font-weight: 500;
+    margin-top: 20px;
+    color: #88abff;
+}
+
+.note p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.note span {
+    display: block;
+    font-size: 16px;
+    color: #575757;
+    margin-top: 5px;
+}
+.note .bottom-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+.bottom-content span {
+    color: #6d6d6d;
+    font-size: 14px;
+}
+
+.bottom-content .settings i {
+    cursor: pointer;
+    font-size: 15px;
+    color: #6d6d6d;
+}
+.settings {
+    position: relative;
+}
+.settings .menu {
+}

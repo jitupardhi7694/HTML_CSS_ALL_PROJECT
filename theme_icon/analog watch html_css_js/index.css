@@ -1,0 +1,82 @@
+body {
+    background: transparent;
+    background-color: transparent;
+    background-color: rgb(105, 213, 227);
+}
+.clock {
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    margin: 10vh auto;
+    display: flex;
+    position: relative;
+}
+
+.head-h2 {
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: rgb(0, 242, 255);
+    margin-bottom: 0;
+    text-shadow: 1.2px 1.5px 2.5px rgb(33, 34, 36);
+    text-align: center;
+    position: relative;
+}
+.head1-h2 {
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(9, 255, 0);
+    margin-bottom: 0;
+    text-shadow: 1.2px 1.5px 2.5px rgb(33, 34, 36);
+    text-align: center;
+    position: relative;
+}
+span {
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: rgb(0, 240, 148);
+    margin-bottom: 0;
+    text-shadow: 1.2px 1.5px 2.5px rgb(33, 34, 36);
+    text-align: center;
+    position: relative;
+}
+.clock-face {
+    width: 55vh;
+    height: 55vh;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.2;
+    left: 2.5vh;
+    background: url('https://github.com/umarcbs/AnalogCLock/blob/master/clock-face2.png?raw=true');
+    background-size: 100% 100%;
+    box-shadow: 2px 2.5px 10.5px 11.5px rgb(66, 59, 59);
+    background-color: rgba(0, 242, 255, 0.87);
+}
+
+.hand {
+    width: 35%;
+    height: 6px;
+    background-color: rgb(255, 0, 230);
+    position: absolute;
+    top: 49.5%;
+    left: 17.5%;
+    transform-origin: 95%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.second-hand {
+    height: 3px;
+}
+
+.hour-hand {
+    width: 20%;
+    left: 31.8%;
+    top: 50%;
+}
